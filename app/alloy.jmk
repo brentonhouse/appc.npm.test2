@@ -1,0 +1,7 @@
+task( "pre:compile", function( config, logger )
+{
+	logger.info('starting local npm test...');
+	var fs = require('fs-extra');
+	fs.writeFileSync('temp.txt',new Date());
+});
+
