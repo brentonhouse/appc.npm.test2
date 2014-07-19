@@ -1,18 +1,23 @@
-Welcome to your Appcelerator Titanium Mobile Project
+This is a project created for testing using a locally installed npm package inside of alloy.jmk
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+
+Normally, I would not checkin the node_modules folder, but I did so in this case for demonstration purposes.
+
 
 
 
 ----------------------------------
-Stuff our legal folk make us say:
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
 
-Titanium is Copyright (c) 2008-2013 by Appcelerator, Inc. All Rights Reserved.
+The following is the command that is executed and the error that follows:
 
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
+`ti build -p mobileweb'
 
+```
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module 'fs-extra'
+
+
+```
